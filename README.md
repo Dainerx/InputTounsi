@@ -141,4 +141,4 @@ Note: You can override all css style properties following that pattern.
 
 
 ## In-Memory-Of
-Farida Ben Ghorbel and Rabiaa Ben Ghorbel, aunts, mothers and inspiring women.
+Farida Ben Ghorbel and Rabiaa Ben Ghorbel, lovely aunts, caring mothers and inspiring women.

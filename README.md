@@ -13,8 +13,8 @@ If you like it and would like to leave some feeds back please leave me a message
 - [Getting Started](#getting-started)
 - [Options](#options)
 - [Created By](#created-by)
-- [Trusted By](#trusted)
-- [In Memory of](#In-Memory-Of)
+- [Trusted By](#trusted-by)
+- [In Memory of](#in-memory-of)
 
 ## Demo and Examples
 You can view a live demo and some examples of how to use the various options here: http://dainer.me/Inputtounsi, or try it for yourself using the included demo.html.

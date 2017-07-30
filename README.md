@@ -1,7 +1,7 @@
 # Input Tounsi
 A jQuery plugin for entering and validating Tunisian users' coordinates. It is made very easy to use and easier to customize .
 
-<img src="https://raw.github.com/jackocnr/intl-tel-input/master/screenshot.png" width="424px" height="246px">
+<img src="https://raw.githubusercontent.com/Dainerx/InputTounsi/master/screenshots/screenshot-1.png?token=ASmpJW4uTy8276xSEkws2A1f28J7GRKVks5ZhmH1wA%3D%3D" width="424px" height="246px">
 
 If you like it and would like to leave some feeds back please leave me a message on one of my social medias accounts or [personal website](http://dainer.me).
 

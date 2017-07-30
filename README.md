@@ -46,7 +46,7 @@ You can view a live demo and some examples of how to use the various options her
   ```html
   <input type="text" id="cin">
   <script>
-    $("#cin").intlTelInput('cin');
+    $("#cin").verifyInputTounsi('cin');
   </script>
   ```
 3. InputTounsi supports seven kinds of input, you can only use the supported ones. 

@@ -1,5 +1,6 @@
 var data = '[{ "state": "Ben Arous","cities": ["Ben Arous", "El Mourouj", "Hammam Lif", "Hammam Chott", "Bou Mhel el-Bassatine", "Ezzahra", "Radès", "Mégrine", "Mohamedia-Fouchana", "Mornag", "Khalidia"]},{"state": "Tunis","cities": ["Tunis", "Le Bardo", "Le Kram", "La Goulette", "Carthage", "Sidi Bou Said", "La Marsa", "Sidi Hassine"]},{"state": "Ariana","cities": ["Ariana", "La Soukra", "Raoued", "Kalâat el-Andalous", "Sidi Thabet", "Ettadhamen-Mnihla"]},{"state": "Manouba","cities": ["Manouba", "Den Den", "Douar Hicher", "Oued Ellil", "Mornaguia", "Borj El Amri", "Djedeida", "Tebourba", "El Battan"]},{ "state": "Nabeul","cities": ["Nabeul", "Dar Chaabane", "Béni Khiar", "El Maâmoura", "Somâa", "Korba", "Tazerka", "Menzel Temime", "Menzel Horr", "El Mida", "Kelibia","Azmour","Hammam Ghezèze", "Dar Allouch", "El Haouaria", "Takelsa", "Soliman",  "Korbous", "Menzel Bouzelfa", "Béni Khalled", "Zaouiet Djedidi", "Grombalia", "Bou Argoub", "Hammamet"]},{ "state": "Zaghouan","cities": ["Zaghouan", "Zriba", "Bir Mcherga", "Djebel Oust", "El Fahs", "Nadhour"]},{ "state": "Bizerte","cities": ["Bizerte", "Sejnane", "Mateur", "Menzel Bourguiba", "Tinja", "Ghar al Milh", "Aousja", "Menzel Jemil", "Menzel Abderrahmane", "El Alia", "Ras Jebel", "Metline", "Raf Raf"]},{ "state": "Béja","cities": ["Béja", "El Maâgoula", "Zahret Medien", "Nefza", "Téboursouk", "Testour", "Goubellat", "Majaz al Bab"]},{ "state": "Jendouba","cities": ["Jendouba", "Bou Salem", "Tabarka", "Aïn Draham", "Fernana", "Beni Mtir", "Ghardimaou", "Oued Melliz"]},{ "state": "El Kef","cities": ["El Kef", "Nebeur", "Touiref", "Sakiet Sidi Youssef", "Tajerouine", "Menzel Salem", "Kalaat es Senam", "Kalâat Khasba", "Jérissa", "El Ksour", "Dahmani", "Sers"]},{ "state": "Siliana","cities": ["Siliana", "Bou Arada", "Gaâfour", "El Krib", "Sidi Bou Rouis", "Maktar", "Rouhia", "Kesra", "Bargou", "El Aroussa"]},{ "state": "Sousse","cities": ["Sousse", "Ksibet Thrayet", "Ezzouhour", "Zaouiet Sousse", "Hammam Sousse", "Akouda", "Kalâa Kebira", "Sidi Bou Ali", "Hergla", "Enfidha", "Bouficha", "Sidi El Hani", "Msaken", "Kalâa Seghira", "Messaadine", "Kondar"]},{ "state": "Monastir","cities": ["Monastir", "Khniss", "Ouerdanin", "Sahline Moôtmar", "Sidi Ameur", "Zéramdine", "Beni Hassen", "Ghenada", "Jemmal", "Menzel Kamel", "Zaouiet Kontoch", "Bembla-Mnara", "Menzel Ennour", "El Masdour", "Moknine", "Sidi Bennour", "Menzel Farsi",  "Amiret El Fhoul", "Amiret Touazra", "Amiret El Hojjaj", "Cherahil", "Bekalta", "Téboulba", "Ksar Hellal", "Ksibet El Mediouni", "Benen Bodher", "Touza", "Sayada", "Lemta", "Bouhjar", "Menzel Hayet"]},{ "state": "Mahdia","cities": ["Mahdia", "Rejiche", "Bou Merdes", "Ouled Chamekh", "Chorbane", "Hebira", "Essouassi", "El Djem", "Kerker", "Chebba", "Melloulèche", "Sidi Alouane", "Ksour Essef", "El Bradâa"]},{ "state": "Sfax","cities": ["Sfax", "Sakiet Ezzit", "Chihia", "Sakiet Eddaïer", "Gremda", "El Ain", "Thyna", "Agareb", "Jebiniana", "El Hencha", "Menzel Chaker", "Ghraïba", "Bir Ali Ben Khélifa", "Skhira", "Mahares", "Kerkennah"]},{ "state": "Kairouan","cities": ["Kairouan", "Chebika", "Sbikha", "Oueslatia", "Aïn Djeloula", "Haffouz", "Alaâ", "Hajeb El Ayoun", "Nasrallah", "Menzel Mehiri", "Echrarda", "Bou Hajla"]},{ "state": "Kasserine","cities": ["Kasserine", "Sbeitla", "Sbiba", "Jedelienne", "Thala", "Haïdra", "Foussana", "Fériana", "Thélepte", "Magel Bel Abbès"]},{ "state": "Sidi Bouzid","cities": ["Sidi Bouzid", "Jilma", "Cebalet", "Bir El Hafey", "Sidi Ali Ben Aoun", "Menzel Bouzaiane", "Meknassy", "Mezzouna", "Regueb", "Ouled Haffouz"]},{ "state": "Gabès","cities": ["Gabès", "Chenini Nahal", "Ghannouch", "Métouia", "Oudhref", "El Hamma", "Matmata", "Nouvelle Matmata", "Mareth", "Zarat"]},{ "state": "Mednine","cities": ["Medenine", "Beni Khedache", "Ben Gardane", "Zarzis", "Houmt El Souk (Djerba)", "Midoun (Djerba)", "Ajim (Djerba)"]},{ "state": "Tataouine","cities": ["Tataouine", "Bir Lahmar", "Ghomrassen", "Dehiba", "Remada"]},{ "state": "Gafsa","cities": ["Gafsa", "El Ksar", "Moularès", "Redeyef", "Métlaoui", "Mdhila", "El Guettar", "Sened"]},{ "state": "Tozeur","cities": ["Tozeur", "Degache", "Hamet Jerid", "Nafta", "Tamerza"]},{ "state": "Kebili", "cities": ["Kebili", "Djemna", "Douz", "El Golâa", "Souk Lahad"]}]';
 
+
 function findCities(state) {
     var dataParsed = JSON.parse(data);
     for (var i = dataParsed.length - 1; i >= 0; i--) {
@@ -9,54 +10,76 @@ function findCities(state) {
 }
 
 var verifyFunctions = [];
+var flagFunctions=[];
 verifyFunctions['cin'] = function (str) {
     if (str instanceof Array) {
         if (str["pattern"] != undefined) {
+            flagFunctions['cin']=str['pattern'].test(str['value']);
             return str['pattern'].test(str['value']);
         }
-        else
-            return /^(1|0)\d{6}$/.test(str);
+        else {
+            flagFunctions['cin']=/^(1|0)\d{6}$/.test(str['value']);
+            return /^(1|0)\d{6}$/.test(str['value']);
+        }
     }
+    flagFunctions['cin']=/^(1|0)\d{6}$/.test(str);
     return /^(1|0)\d{6}$/.test(str);
 };
 verifyFunctions['name'] = function (str) {
     if (str instanceof Array) {
         if (str["pattern"] != undefined) {
+            flagFunctions['name']=str['pattern'].test(str['value']);
             return str['pattern'].test(str['value']);
         }
-        else
+        else {
+            flagFunctions['name']=/^[A-Za-z ]{4,50}$/.test(str['value']);
             return /^[A-Za-z ]{4,50}$/.test(str['value']);
+        }
     }
+
+    flagFunctions['name']=/^[A-Za-z ]{4,50}$/.test(str['value']);
     return /^[A-Za-z ]{4,50}$/.test(str);
 };
 verifyFunctions['lastname'] = function (str) {
     if (str instanceof Array) {
         if (str["pattern"] != undefined) {
+            flagFunctions['lastname']=str['pattern'].test(str['value']);
             return str['pattern'].test(str['value']);
         }
-        else
-            return /^[A-Za-z ]{4,50}$/.test(str);
+        else {
+            flagFunctions['lastname']=/^[A-Za-z ]{4,50}$/.test(str['value']);
+            return /^[A-Za-z ]{4,50}$/.test(str['value']);
+        }
     }
+    flagFunctions['lastname']=/^[A-Za-z ]{4,50}$/.test(str);
     return /^[A-Za-z ]{4,50}$/.test(str);
 };
 verifyFunctions['phone'] = function (str) {
     if (str instanceof Array) {
         if (str["pattern"] != undefined) {
+            flagFunctions['phone']=str['pattern'].test(str['value']);
             return str['pattern'].test(str['value']);
         }
-        else
-            return /^(2|5|9)\d{7}$/.test(str);
+        else {
+            flagFunctions['phone']=/^(2|5|9)\d{7}$/.test(str['value']);
+            return /^(2|5|9)\d{7}$/.test(str['value']);
+        }
     }
+    flagFunctions['phone']=/^(2|5|9)\d{7}$/.test(str);
     return /^(2|5|9)\d{7}$/.test(str);
 };
 verifyFunctions['email'] = function (str) {
     if (str instanceof Array) {
         if (str["pattern"] != undefined) {
+            flagFunctions['email']=str['pattern'].test(str['value']);
             return str['pattern'].test(str['value']);
         }
-        else
-            return /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/.test(str);
+        else {
+            flagFunctions['email']=/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/.test(str['value']);
+            return /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/.test(str['value']);
+        }
     }
+    flagFunctions['email']=/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/.test(str);
     return /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/.test(str);
 };
 verifyFunctions['state'] = function (box, boxCity) {
@@ -91,13 +114,23 @@ verifyFunctions['city'] = function (box) {
 verifyFunctions['address'] = function (str) {
     if (str instanceof Array) {
         if (str["pattern"] != undefined) {
+            flagFunctions['address']=str['pattern'].test(str['value']);
             return str['pattern'].test(str['value']);
         }
-        else
-            return /^\d+\s[A-z]+\s[A-z]+/.test(str);
+        else {
+            flagFunctions['address']=/^\d+\s[A-z]+\s[A-z]+/.test(str['value']);
+            return /^\d+\s[A-z]+\s[A-z]+/.test(str['value']);
+        }
     }
+    flagFunctions['address']=/^\d+\s[A-z]+\s[A-z]+/.test(str);
     return /^\d+\s[A-z]+\s[A-z]+/.test(str);
 };
+
+verifyFunctions['form'] = function (str) {
+    console.log('e');
+    return flagFunctions['cin']  && flagFunctions['name'] && flagFunctions['lastname'] && flagFunctions['phone'] && flagFunctions['email'] && flagFunctions['address'];
+};
+
 
 (function ($) {
 

@@ -13,7 +13,7 @@
 <div class="container">
 
 
-<form>
+<form id="whole">
     <div class="form-group">
         <label for="cin">Cin:</label>
         <input type="text" class="form-control" id="cin">
@@ -63,7 +63,7 @@
 
 </body>
 
-<script src="../build/InputTounsi.min.js"></script>
+<script src="../src/InputTounsi.js"></script>
 <script>
     //launch plugin
     $("#cin").verifyInputTounsi("cin");
@@ -74,5 +74,7 @@
     $("#state").verifyInputTounsi("state",$("#city"));
     $("#city").verifyInputTounsi("city");
     $("#address").verifyInputTounsi("address");
+    $("#whole").verifyInputTounsi("form");
+
 </script>
 </html>

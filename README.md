@@ -134,11 +134,10 @@ Note: You can override all css style properties following that pattern.
 
 
 ## Created-By
--[Oussama Ben Ghorbel] (http://dainer.me/)
+-[Oussama Ben Ghorbel](http://dainer.me/)
 
 ## Trusted-By
 * [Innovative Partner](https://github.com/behdad/region-flags)
-* [Esprit]](https://github.com/mledoze/countries)
 
 
 ## In-Memory-Of

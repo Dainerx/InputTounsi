@@ -10,76 +10,79 @@ function findCities(state) {
 }
 
 var verifyFunctions = [];
-var flagFunctions=[];
+var flagFunctions = [];
+
+flagFunctions['cin'] = flagFunctions['name'] = flagFunctions['lastname'] = flagFunctions['phone'] = flagFunctions['email'] = flagFunctions['address'] = false;
+
 verifyFunctions['cin'] = function (str) {
     if (str instanceof Array) {
         if (str["pattern"] != undefined) {
-            flagFunctions['cin']=str['pattern'].test(str['value']);
+            flagFunctions['cin'] = str['pattern'].test(str['value']);
             return str['pattern'].test(str['value']);
         }
         else {
-            flagFunctions['cin']=/^(1|0)\d{6}$/.test(str['value']);
+            flagFunctions['cin'] = /^(1|0)\d{6}$/.test(str['value']);
             return /^(1|0)\d{6}$/.test(str['value']);
         }
     }
-    flagFunctions['cin']=/^(1|0)\d{6}$/.test(str);
+    flagFunctions['cin'] = /^(1|0)\d{6}$/.test(str);
     return /^(1|0)\d{6}$/.test(str);
 };
 verifyFunctions['name'] = function (str) {
     if (str instanceof Array) {
         if (str["pattern"] != undefined) {
-            flagFunctions['name']=str['pattern'].test(str['value']);
+            flagFunctions['name'] = str['pattern'].test(str['value']);
             return str['pattern'].test(str['value']);
         }
         else {
-            flagFunctions['name']=/^[A-Za-z ]{4,50}$/.test(str['value']);
+            flagFunctions['name'] = /^[A-Za-z ]{4,50}$/.test(str['value']);
             return /^[A-Za-z ]{4,50}$/.test(str['value']);
         }
     }
 
-    flagFunctions['name']=/^[A-Za-z ]{4,50}$/.test(str['value']);
+    flagFunctions['name'] = /^[A-Za-z ]{4,50}$/.test(str['value']);
     return /^[A-Za-z ]{4,50}$/.test(str);
 };
 verifyFunctions['lastname'] = function (str) {
     if (str instanceof Array) {
         if (str["pattern"] != undefined) {
-            flagFunctions['lastname']=str['pattern'].test(str['value']);
+            flagFunctions['lastname'] = str['pattern'].test(str['value']);
             return str['pattern'].test(str['value']);
         }
         else {
-            flagFunctions['lastname']=/^[A-Za-z ]{4,50}$/.test(str['value']);
+            flagFunctions['lastname'] = /^[A-Za-z ]{4,50}$/.test(str['value']);
             return /^[A-Za-z ]{4,50}$/.test(str['value']);
         }
     }
-    flagFunctions['lastname']=/^[A-Za-z ]{4,50}$/.test(str);
+    flagFunctions['lastname'] = /^[A-Za-z ]{4,50}$/.test(str);
     return /^[A-Za-z ]{4,50}$/.test(str);
 };
 verifyFunctions['phone'] = function (str) {
     if (str instanceof Array) {
         if (str["pattern"] != undefined) {
-            flagFunctions['phone']=str['pattern'].test(str['value']);
+            flagFunctions['phone'] = str['pattern'].test(str['value']);
             return str['pattern'].test(str['value']);
         }
         else {
-            flagFunctions['phone']=/^(2|5|9)\d{7}$/.test(str['value']);
+            flagFunctions['phone'] = /^(2|5|9)\d{7}$/.test(str['value']);
             return /^(2|5|9)\d{7}$/.test(str['value']);
         }
     }
-    flagFunctions['phone']=/^(2|5|9)\d{7}$/.test(str);
+    flagFunctions['phone'] = /^(2|5|9)\d{7}$/.test(str);
     return /^(2|5|9)\d{7}$/.test(str);
 };
 verifyFunctions['email'] = function (str) {
     if (str instanceof Array) {
         if (str["pattern"] != undefined) {
-            flagFunctions['email']=str['pattern'].test(str['value']);
+            flagFunctions['email'] = str['pattern'].test(str['value']);
             return str['pattern'].test(str['value']);
         }
         else {
-            flagFunctions['email']=/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/.test(str['value']);
+            flagFunctions['email'] = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/.test(str['value']);
             return /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/.test(str['value']);
         }
     }
-    flagFunctions['email']=/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/.test(str);
+    flagFunctions['email'] = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/.test(str);
     return /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/.test(str);
 };
 verifyFunctions['state'] = function (box, boxCity) {
@@ -97,7 +100,6 @@ verifyFunctions['state'] = function (box, boxCity) {
             .remove()
             .end();
         $(boxCity).prop('disabled', false);
-        console.log("my object: %o", findCities($(box).val()));
 
         for (var i = findCities($(box).val()).length - 1; i >= 0; i--) {
             var o = new Option(findCities($(box).val())[i], findCities($(box).val())[i]);
@@ -114,21 +116,20 @@ verifyFunctions['city'] = function (box) {
 verifyFunctions['address'] = function (str) {
     if (str instanceof Array) {
         if (str["pattern"] != undefined) {
-            flagFunctions['address']=str['pattern'].test(str['value']);
+            flagFunctions['address'] = str['pattern'].test(str['value']);
             return str['pattern'].test(str['value']);
         }
         else {
-            flagFunctions['address']=/^\d+\s[A-z]+\s[A-z]+/.test(str['value']);
+            flagFunctions['address'] = /^\d+\s[A-z]+\s[A-z]+/.test(str['value']);
             return /^\d+\s[A-z]+\s[A-z]+/.test(str['value']);
         }
     }
-    flagFunctions['address']=/^\d+\s[A-z]+\s[A-z]+/.test(str);
+    flagFunctions['address'] = /^\d+\s[A-z]+\s[A-z]+/.test(str);
     return /^\d+\s[A-z]+\s[A-z]+/.test(str);
 };
 
-verifyFunctions['form'] = function (str) {
-    console.log('e');
-    return flagFunctions['cin']  && flagFunctions['name'] && flagFunctions['lastname'] && flagFunctions['phone'] && flagFunctions['email'] && flagFunctions['address'];
+verifyFunctions['form'] = function () {
+    return flagFunctions['cin'] && flagFunctions['name'] && flagFunctions['lastname'] && flagFunctions['phone'] && flagFunctions['email'] && flagFunctions['address'];
 };
 
 
@@ -230,7 +231,14 @@ verifyFunctions['form'] = function (str) {
             }
 
             else {
-                if (typeof verifyFunctions[type](input.val()) == "boolean") {
+
+                if (type == 'form') {
+                    input.on("submit", function () {
+                        return verifyFunctions['form']();
+                    });
+                }
+
+                else if (typeof verifyFunctions[type](input.val()) == "boolean") {
                     input.attr("placeholder", "Your " + type);
                     input.on("change", function () {
                         if (verifyFunctions[type](input.val())) {

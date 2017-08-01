@@ -39,7 +39,7 @@ You can view a live demo and some examples of how to use the various options her
 1. Include the script along with Jquery
   ```html
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="//dainer.me/InputTounsi.js"></script>  
+  <script src="https://cdn.rawgit.com/Dainerx/InputTounsi/master/build/InputTounsi.min.js"></script>
   ```
 
 2. Add the plugin script and initialise it on your input element

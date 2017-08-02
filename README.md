@@ -17,14 +17,13 @@ If you like it and would like to leave some feeds back please leave me a message
 - [In Memory of](#in-memory-of)
 
 ## Demo and Examples
-You can view a live demo and some examples of how to use the various options here: http://dainer.me/Inputtounsi, or try it for yourself using the included demo.html.
+You can view a live demo here: jsofiddlelink(coming), or try it  yourself using the included html demo pages under the examples folder.
 
 
 ## Features
 * Automatically validate input elements values of Tunisian user coordinates based on Tunisian criteria or chosen criteria.
 * Automatically validate the whole form before sending request to the backend.
-* Automatically display a message of error if the value entered does not match the Tunisian criteria.
-* Automatically display place holders for elements. 
+* Automatically display a message of error if the value entered does not match the Tunisian criteria or chosen criteria.
 * Ability to override all default options in a very simple way.
 
 ## Browser Compatibility

@@ -81,7 +81,6 @@ One of the greatest feature InputTounsi offers is overriding basically everythin
 **Placeholder Overriding**  
   ```html
     <script>
-    opt['placeholder']="This is a custom placeholder, change me!";
     $("#cin").verifyInputTounsi({
         name : "cin",
         placeholder : "This is a custom placeholder, change me"

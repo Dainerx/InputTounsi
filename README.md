@@ -112,9 +112,6 @@ Note: You can override all css style properties following that pattern.
 
   ```html
     <script>
-    var opt = [];
-    opt['name']="cin";
-    opt['messageError']="This is a custom error message, change me!";
     $("#cin").verifyInputTounsi({ 
         name : "cin",
         messageError: "This is a custom error message, change me!"

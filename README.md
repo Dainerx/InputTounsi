@@ -92,17 +92,11 @@ One of the greatest feature InputTounsi offers is overriding basically everythin
 
   ```html
     <script>
-    var opt = [];
-    var styleError = [];
-    var styleSuccess = [];
-    styleError['border-color']="yellow";
-    styleError['border-style']="dashed";
-    styleSuccess['border-color']="blue";
-    styleSuccess['border-style']="dashed";
-    opt['name']="cin";
-    opt['styleError']=styleError;
-    opt['styleSuccess']=styleSuccess;
-    $("#cin").verifyInputTounsi(opt);
+    $("#cin").verifyInputTounsi({
+        name: "cin",
+        styleError: [ ['border-color','yellow'],['border-style' , 'dashed'] ],
+        styleSuccess: [ ['border-color','blue'],['border-style' , 'dashed'] ],
+    });
     </script>
   ```
 Note: You can override all css style properties following that pattern.
@@ -122,12 +116,10 @@ Note: You can override all css style properties following that pattern.
 
   ```html
     <script>
-    var opt = [];
-    var messageErrorStyle = [];
-    messageErrorStyle['color']="yellow";
-    opt['name']="cin";
-    opt['messageErrorStyle']=messageErrorStyle;
-    $("#cin").verifyInputTounsi(opt);
+    $("#cin").verifyInputTounsi({ 
+        name : "cin",
+        messageErrorStyle: ['color','yellow']
+    });
     </script>
   ```
 Note: You can override all css style properties following that pattern.

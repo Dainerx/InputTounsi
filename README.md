@@ -71,10 +71,10 @@ One of the greatest feature InputTounsi offers is overriding basically everythin
 **Pattern Overriding**  
   ```html
     <script>
-    var opt = [];
-    opt['name']="cin";
-    opt['pattern']=/^(2|5|9)\d{7}$/;
-    $("#cin").verifyInputTounsi(opt);
+    $("#cin").verifyInputTounsi({
+        name: "cin",
+        pattern: /^(2|5|9)\d{7}$/
+    });
     </script>
   ```
 
@@ -82,7 +82,10 @@ One of the greatest feature InputTounsi offers is overriding basically everythin
   ```html
     <script>
     opt['placeholder']="This is a custom placeholder, change me!";
-    $("#cin").verifyInputTounsi(opt);
+    $("#cin").verifyInputTounsi({
+        name : "cin",
+        placeholder : "This is a custom placeholder, change me"
+    });
     </script>
   ```
 
@@ -112,7 +115,10 @@ Note: You can override all css style properties following that pattern.
     var opt = [];
     opt['name']="cin";
     opt['messageError']="This is a custom error message, change me!";
-    $("#cin").verifyInputTounsi(opt);
+    $("#cin").verifyInputTounsi({ 
+        name : "cin",
+        messageError: "This is a custom error message, change me!"
+    });
     </script>
   ```
 

@@ -21,7 +21,7 @@ You can view a live demo and some examples of how to use the various options her
 
 
 ## Features
-* Automatically validate input elements values of Tunisian user coordinates based on Tunisian criteria.
+* Automatically validate input elements values of Tunisian user coordinates based on Tunisian criteria or chosen criteria.
 * Automatically validate the whole form before sending request to the backend.
 * Automatically display a message of error if the value entered does not match the Tunisian criteria.
 * Automatically display place holders for elements. 

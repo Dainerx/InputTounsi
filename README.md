@@ -1,9 +1,11 @@
 # Input Tounsi
-A jQuery plugin for entering and validating Tunisian users' coordinates. It is made very easy to use and easier to customize .
+A jQuery plugin for entering and validating Tunisian users' data or any other data. It is made very easy to use and easier to customize .
 
 <img src="https://raw.githubusercontent.com/Dainerx/InputTounsi/master/screenshots/screenshot-1.png?token=ASmpJW4uTy8276xSEkws2A1f28J7GRKVks5ZhmH1wA%3D%3D">
 
 If you like it and would like to leave some feeds back please leave me a message on one of my social medias accounts or [personal website](http://dainer.me).
+
+Also, contributing is open for everyone please don't hesitate to come forward.
 
 ## Table of Contents
 
@@ -21,9 +23,9 @@ You can view a live demo here: jsofiddlelink(coming), or try it  yourself using 
 
 
 ## Features
-* Automatically validate input elements values of Tunisian user coordinates based on Tunisian criteria or chosen criteria.
+* Automatically validate input elements values of Tunisian user data based on default Tunisian criteria or chosen criteria.
 * Automatically validate the whole form before sending request to the backend.
-* Automatically display a message of error if the value entered does not match the Tunisian criteria or chosen criteria.
+* Automatically display a message of error if the value entered does not match the default Tunisian criteria or chosen criteria.
 * Ability to override all default options in a very simple way.
 
 ## Browser Compatibility

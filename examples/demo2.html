@@ -63,21 +63,16 @@
 
 </body>
 
-<script src="../build/InputTounsi.min.js"></script>
+<script src="https://cdn.rawgit.com/Dainerx/InputTounsi/master/build/InputTounsi.min.js"></script>
 <script>
-    //Create options array
-    var opt = [];
-    //choose the element
-    opt['name']="name";
-    //override what you want:
-    opt['messageError']='This is a custom error message';
 
-
-
-    //launch plugin
     $("#cin").verifyInputTounsi("cin");
-    //launch it passing the opt array
-    $("#name").verifyInputTounsi(opt);
+
+    //launch the plugin with overriding the error message.
+    $("#name").verifyInputTounsi({
+        name: "name",
+        messageError: "This is a custom error message"
+    });
     $("#lastname").verifyInputTounsi("lastname");
     $("#phone").verifyInputTounsi("phone");
     $("#email").verifyInputTounsi("email");

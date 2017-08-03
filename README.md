@@ -1,25 +1,21 @@
 # Input Tounsi
-A jQuery plugin for entering and validating Tunisian users' data or any other data. It is made very easy to use and easier to customize .
+A jQuery plugin for entering and validating Tunisian users' data or any other data. It is made very easy to use and easier to customize.
 
 <img src="https://raw.githubusercontent.com/Dainerx/InputTounsi/master/screenshots/screenshot-1.png?token=ASmpJW4uTy8276xSEkws2A1f28J7GRKVks5ZhmH1wA%3D%3D">
-
-If you like it and would like to leave some feeds back please leave me a message on one of my social medias accounts or [personal website](http://dainer.me).
-
-Also, contributing is open for everyone please don't hesitate to come forward.
 
 ## Table of Contents
 
 - [Demo and Examples](#demo-and-examples)
 - [Features](#features)
 - [Browser Compatibility](#browser-compatibility)
-- [Getting Started](#getting-started)
+- [Usage](#usage)
 - [Options](#options)
 - [Created By](#created-by)
 - [Trusted By](#trusted-by)
 - [In Memory of](#in-memory-of)
-
+- [Support and Contribution](#support-and-contribution)
 ## Demo and Examples
-You can view a live demo here: jsofiddlelink(coming), or try it  yourself using the included html demo pages under the examples folder.
+You can view a live demo [here](https://jsfiddle.net/dainer/96nxdLgt/), or try it  yourself using the included html demo pages under the examples folder.
 
 
 ## Features
@@ -35,7 +31,7 @@ You can view a live demo here: jsofiddlelink(coming), or try it  yourself using 
 
 
 
-## Getting Started
+## Usage
 
 1. Include the script along with Jquery
   ```html
@@ -132,8 +128,18 @@ Note: You can override all css style properties following that pattern.
 - [Oussama Ben Ghorbel](http://dainer.me/)
 
 ## Trusted-By
-* [Innovative Partner](https://github.com/behdad/region-flags)
+* [Innovative Partner](http://innovativepart.com/)
+* [Bugs_Bunny Team](https://www.facebook.com/BugsBunnyCTF/)
 
 
 ## In-Memory-Of
 Farida Ben Ghorbel and Rabiaa Ben Ghorbel, lovely aunts, caring mothers and inspiring women.
+
+## Support and Contribution
+
+Tested InputTounsi and have comments?
+-> Please send your feeds back on one of my social medias accounts that can be on my [personal website](http://dainer.me/).
+
+Interested in making InputTounsi better for everyone? 
+-> Come forward and contribute, everyone is welcome.
+

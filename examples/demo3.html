@@ -63,34 +63,17 @@
 
 </body>
 
-<script src="../build/InputTounsi.min.js"></script>
+<script src="https://cdn.rawgit.com/Dainerx/InputTounsi/master/build/InputTounsi.min.js"></script>
 <script>
-    //Create options array
-    var opt = [];
-    var opt1 = [];
-    //Create two styles arrays
-    var styleError = [];
-    var styleSuccess = [];
-    //choose the element
-    opt['name']="name";
-    opt1['name']="cin";
-    //override what you want:
-    styleError['border-color']="yellow";
-    styleError['border-style']="dashed";
-    styleSuccess['border-color']="blue";
-    styleSuccess['border-style']="dashed";
-    opt['styleError']=styleError;
-    opt['styleSuccess']=styleSuccess;
-    opt1['styleError']=styleError;
-    opt1['styleSuccess']=styleSuccess;
 
+    $("#cin").verifyInputTounsi("cin");
 
-
-    //launch plugin
-
-    $("#cin").verifyInputTounsi(opt1);
-    //launch it passing the opt array
-    $("#name").verifyInputTounsi(opt);
+    //launch the plugin with overriding the style of input border on success and error.
+    $("#name").verifyInputTounsi({
+        name: "name",
+        styleError: [ ['border-color','yellow'],['border-style' , 'dashed'] ],
+        styleSuccess: [ ['border-color','blue'],['border-style' , 'dashed'] ],
+    });
     $("#lastname").verifyInputTounsi("lastname");
     $("#phone").verifyInputTounsi("phone");
     $("#email").verifyInputTounsi("email");

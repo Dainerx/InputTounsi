@@ -15,7 +15,7 @@ var flagFunctions = [];
 flagFunctions['cin'] = flagFunctions['name'] = flagFunctions['lastname'] = flagFunctions['phone'] = flagFunctions['email'] = flagFunctions['address'] = false;
 
 verifyFunctions['cin'] = function (str) {
-    if (str instanceof Array) {
+    if (str instanceof Object) {
         if (str["pattern"] != undefined) {
             flagFunctions['cin'] = str['pattern'].test(str['value']);
             return str['pattern'].test(str['value']);
@@ -29,7 +29,7 @@ verifyFunctions['cin'] = function (str) {
     return /^(1|0)\d{6}$/.test(str);
 };
 verifyFunctions['name'] = function (str) {
-    if (str instanceof Array) {
+    if (str instanceof Object) {
         if (str["pattern"] != undefined) {
             flagFunctions['name'] = str['pattern'].test(str['value']);
             return str['pattern'].test(str['value']);
@@ -44,7 +44,7 @@ verifyFunctions['name'] = function (str) {
     return /^[A-Za-z ]{4,50}$/.test(str);
 };
 verifyFunctions['lastname'] = function (str) {
-    if (str instanceof Array) {
+    if (str instanceof Object) {
         if (str["pattern"] != undefined) {
             flagFunctions['lastname'] = str['pattern'].test(str['value']);
             return str['pattern'].test(str['value']);
@@ -58,7 +58,7 @@ verifyFunctions['lastname'] = function (str) {
     return /^[A-Za-z ]{4,50}$/.test(str);
 };
 verifyFunctions['phone'] = function (str) {
-    if (str instanceof Array) {
+    if (str instanceof Object) {
         if (str["pattern"] != undefined) {
             flagFunctions['phone'] = str['pattern'].test(str['value']);
             return str['pattern'].test(str['value']);
@@ -72,7 +72,7 @@ verifyFunctions['phone'] = function (str) {
     return /^(2|5|9)\d{7}$/.test(str);
 };
 verifyFunctions['email'] = function (str) {
-    if (str instanceof Array) {
+    if (str instanceof Object) {
         if (str["pattern"] != undefined) {
             flagFunctions['email'] = str['pattern'].test(str['value']);
             return str['pattern'].test(str['value']);
@@ -114,7 +114,7 @@ verifyFunctions['city'] = function (box) {
 };
 
 verifyFunctions['address'] = function (str) {
-    if (str instanceof Array) {
+    if (str instanceof Object) {
         if (str["pattern"] != undefined) {
             flagFunctions['address'] = str['pattern'].test(str['value']);
             return str['pattern'].test(str['value']);
@@ -140,7 +140,7 @@ verifyFunctions['form'] = function () {
         return this.each(function () {
             var input = $(this);
 
-            if (type instanceof Array) {
+            if (type instanceof Object) {
 
                 if (type["placeholder"] != undefined)
                     input.attr("placeholder", type['placeholder']);
@@ -150,21 +150,23 @@ verifyFunctions['form'] = function () {
                 input.on("change", function () {
                     type['value'] = input.val();
 
+
+
                     if (verifyFunctions[type['name']](type)) {
                         if (type["messageError"] != undefined) {
                             if ($("#" + type['name'] + "Error").length)
                                 $("#" + type['name'] + "Error").remove();
                         }
                         else {
-                            if ($("#" + type + "Error").length)
-                                $("#" + type + "Error").remove();
+                            if ($("#" + type['name'] + "Error").length)
+                                $("#" + type['name'] + "Error").remove();
                         }
 
                         var o = {};
 
                         if (type["styleSuccess"] != undefined) {
                             for (var key in type['styleSuccess']) {
-                                o[key] = type['styleSuccess'][key];
+                                o[type['styleSuccess'][key][0]] = type['styleSuccess'][key][1];
                             }
                         }
 
@@ -182,15 +184,16 @@ verifyFunctions['form'] = function () {
                                 $("#" + type['name'] + "Error").remove();
                         }
                         else {
-                            if ($("#" + type + "Error").length)
-                                $("#" + type + "Error").remove();
+                            if ($("#" + type['name'] + "Error").length)
+                                $("#" + type['name'] + "Error").remove();
                         }
 
                         var o = {};
 
+
                         if (type["styleError"] != undefined) {
                             for (var key in type['styleError']) {
-                                o[key] = type['styleError'][key];
+                                o[type['styleError'][key][0]] = type['styleError'][key][1];
                             }
                         }
 
@@ -205,7 +208,7 @@ verifyFunctions['form'] = function () {
 
                         if (type["messageErrorStyle"] != undefined) {
                             for (var key in type['messageErrorStyle']) {
-                                o1[key] = type['messageErrorStyle'][key];
+                                o1[type['messageErrorStyle'][key][0]] = type['messageErrorStyle'][key][1];
                             }
                         }
                         else {
@@ -219,7 +222,7 @@ verifyFunctions['form'] = function () {
                             }
                             else {
                                 var labelAfter = $("<label>").text("The " + type['name'] + " you entered does not meet the Tunisian criteria");
-                                labelAfter.attr({id: type + "Error"});
+                                labelAfter.attr({id: type['name'] + "Error"});
                             }
 
                             labelAfter.css(o1);

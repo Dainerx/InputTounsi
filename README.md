@@ -25,9 +25,9 @@ You can view a live demo [here](https://jsfiddle.net/dainer/96nxdLgt/), or try i
 * Ability to override all default options in a very simple way.
 
 ## Browser Compatibility
-| Chrome | FF  | Safari | IE  | Chrome Android | Mobile Safari | IE Mob |
-| :----: | :-: | :----: | :-: | :------------: | :-----------: | :----: |
-|    ✓   |  ✓  |    ✓   |  9  |      ✓         |       ✓       |     ✓  |
+| Chrome | FF  | Safari | IE  | Chrome Android | Mobile Safari |
+| :----: | :-: | :----: | :-: | :------------: | :-----------: | 
+|    ✓   |  ✓  |    ✓   |  9  |      ✓         |       ✓       |     
 
 
 

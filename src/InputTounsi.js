@@ -21,12 +21,12 @@ verifyFunctions['cin'] = function (str) {
             return str['pattern'].test(str['value']);
         }
         else {
-            flagFunctions['cin'] = /^(1|0)\d{6}$/.test(str['value']);
-            return /^(1|0)\d{6}$/.test(str['value']);
+            flagFunctions['cin'] = /^(1|0)\d{7}$/.test(str['value']);
+            return /^(1|0)\d{7}$/.test(str['value']);
         }
     }
-    flagFunctions['cin'] = /^(1|0)\d{6}$/.test(str);
-    return /^(1|0)\d{6}$/.test(str);
+    flagFunctions['cin'] = /^(1|0)\d{7}$/.test(str);
+    return /^(1|0)\d{7}$/.test(str);
 };
 verifyFunctions['name'] = function (str) {
     if (str instanceof Object) {

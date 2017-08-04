@@ -64,12 +64,12 @@ verifyFunctions['phone'] = function (str) {
             return str['pattern'].test(str['value']);
         }
         else {
-            flagFunctions['phone'] = /^(2|5|9)\d{7}$/.test(str['value']);
-            return /^(2|5|9)\d{7}$/.test(str['value']);
+            flagFunctions['phone'] = /^(2|5|4|9)\d{7}$/.test(str['value']);
+            return /^(2|5|4|9)\d{7}$/.test(str['value']);
         }
     }
-    flagFunctions['phone'] = /^(2|5|9)\d{7}$/.test(str);
-    return /^(2|5|9)\d{7}$/.test(str);
+    flagFunctions['phone'] = /^(2|5|4|9)\d{7}$/.test(str);
+    return /^(2|5|4|9)\d{7}$/.test(str);
 };
 verifyFunctions['email'] = function (str) {
     if (str instanceof Object) {

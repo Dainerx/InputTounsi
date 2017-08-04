@@ -1,45 +1,42 @@
 # Input Tounsi
-A jQuery plugin for entering and validating Tunisian users' coordinates. It is made very easy to use and easier to customize .
+A jQuery plugin for entering and validating Tunisian users' data or any other data. It is made very easy to use and easier to customize.
 
 <img src="https://raw.githubusercontent.com/Dainerx/InputTounsi/master/screenshots/screenshot-1.png?token=ASmpJW4uTy8276xSEkws2A1f28J7GRKVks5ZhmH1wA%3D%3D">
-
-If you like it and would like to leave some feeds back please leave me a message on one of my social medias accounts or [personal website](http://dainer.me).
 
 ## Table of Contents
 
 - [Demo and Examples](#demo-and-examples)
 - [Features](#features)
 - [Browser Compatibility](#browser-compatibility)
-- [Getting Started](#getting-started)
+- [Usage](#usage)
 - [Options](#options)
 - [Created By](#created-by)
 - [Trusted By](#trusted-by)
 - [In Memory of](#in-memory-of)
-
+- [Support and Contribution](#support-and-contribution)
 ## Demo and Examples
-You can view a live demo and some examples of how to use the various options here: http://dainer.me/Inputtounsi, or try it for yourself using the included demo.html.
+You can view a live demo [here](https://jsfiddle.net/dainer/96nxdLgt/), or try it  yourself using the included html demo pages under the examples folder.
 
 
 ## Features
-* Automatically validate input elements values of Tunisian user coordinates based on Tunisian criteria.
+* Automatically validate input elements values of Tunisian user data based on default Tunisian criteria or chosen criteria.
 * Automatically validate the whole form before sending request to the backend.
-* Automatically display a message of error if the value entered does not match the Tunisian criteria.
-* Automatically display place holders for elements. 
+* Automatically display a message of error if the value entered does not match the default Tunisian criteria or chosen criteria.
 * Ability to override all default options in a very simple way.
 
 ## Browser Compatibility
-| Chrome | FF  | Safari | IE  | Chrome Android | Mobile Safari | IE Mob |
-| :----: | :-: | :----: | :-: | :------------: | :-----------: | :----: |
-|    ✓   |  ✓  |    ✓   |  9  |      ✓         |       ✓       |     ✓  |
+| Chrome | FF  | Safari | IE  | Chrome Android | Mobile Safari |
+| :----: | :-: | :----: | :-: | :------------: | :-----------: | 
+|    ✓   |  ✓  |    ✓   |  9  |      ✓         |       ✓       |     
 
 
 
-## Getting Started
+## Usage
 
 1. Include the script along with Jquery
   ```html
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="//dainer.me/InputTounsi.js"></script>  
+  <script src="https://cdn.rawgit.com/Dainerx/InputTounsi/master/build/InputTounsi.min.js"></script>
   ```
 
 2. Add the plugin script and initialise it on your input element
@@ -71,18 +68,20 @@ One of the greatest feature InputTounsi offers is overriding basically everythin
 **Pattern Overriding**  
   ```html
     <script>
-    var opt = [];
-    opt['name']="cin";
-    opt['pattern']=/^(2|5|9)\d{7}$/;
-    $("#cin").verifyInputTounsi(opt);
+    $("#cin").verifyInputTounsi({
+        name: "cin",
+        pattern: /^(2|5|9)\d{7}$/
+    });
     </script>
   ```
 
 **Placeholder Overriding**  
   ```html
     <script>
-    opt['placeholder']="This is a custom placeholder, change me!";
-    $("#cin").verifyInputTounsi(opt);
+    $("#cin").verifyInputTounsi({
+        name : "cin",
+        placeholder : "This is a custom placeholder, change me"
+    });
     </script>
   ```
 
@@ -90,17 +89,11 @@ One of the greatest feature InputTounsi offers is overriding basically everythin
 
   ```html
     <script>
-    var opt = [];
-    var styleError = [];
-    var styleSuccess = [];
-    styleError['border-color']="yellow";
-    styleError['border-style']="dashed";
-    styleSuccess['border-color']="blue";
-    styleSuccess['border-style']="dashed";
-    opt['name']="cin";
-    opt['styleError']=styleError;
-    opt['styleSuccess']=styleSuccess;
-    $("#cin").verifyInputTounsi(opt);
+    $("#cin").verifyInputTounsi({
+        name: "cin",
+        styleError: [ ['border-color','yellow'],['border-style' , 'dashed'] ],
+        styleSuccess: [ ['border-color','blue'],['border-style' , 'dashed'] ],
+    });
     </script>
   ```
 Note: You can override all css style properties following that pattern.
@@ -109,10 +102,10 @@ Note: You can override all css style properties following that pattern.
 
   ```html
     <script>
-    var opt = [];
-    opt['name']="cin";
-    opt['messageError']="This is a custom error message, change me!";
-    $("#cin").verifyInputTounsi(opt);
+    $("#cin").verifyInputTounsi({ 
+        name : "cin",
+        messageError: "This is a custom error message, change me!"
+    });
     </script>
   ```
 
@@ -120,12 +113,10 @@ Note: You can override all css style properties following that pattern.
 
   ```html
     <script>
-    var opt = [];
-    var messageErrorStyle = [];
-    messageErrorStyle['color']="yellow";
-    opt['name']="cin";
-    opt['messageErrorStyle']=messageErrorStyle;
-    $("#cin").verifyInputTounsi(opt);
+    $("#cin").verifyInputTounsi({ 
+        name : "cin",
+        messageErrorStyle: ['color','yellow']
+    });
     </script>
   ```
 Note: You can override all css style properties following that pattern.
@@ -137,8 +128,20 @@ Note: You can override all css style properties following that pattern.
 - [Oussama Ben Ghorbel](http://dainer.me/)
 
 ## Trusted-By
-* [Innovative Partner](https://github.com/behdad/region-flags)
+* [Innovative Partner](http://innovativepart.com/)
+* [Bugs_Bunny Team](https://www.facebook.com/BugsBunnyCTF/)
 
 
 ## In-Memory-Of
 Farida Ben Ghorbel and Rabiaa Ben Ghorbel, lovely aunts, caring mothers and inspiring women.
+
+## Support and Contribution
+
+Tested InputTounsi and have comments?
+
+* Please send your feeds back on one of my social medias accounts that can be on my [personal website](http://dainer.me/).
+
+Interested in making InputTounsi better for everyone? 
+
+* Come forward and contribute, everyone is welcome.
+

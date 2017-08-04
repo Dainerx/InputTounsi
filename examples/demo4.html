@@ -65,15 +65,14 @@
 
 <script src="../src/InputTounsi.js"></script>
 <script>
-
-    $("#cin").verifyInputTounsi("cin");
-
-    //launch the plugin with overriding the style of input border on success and error.
-    $("#name").verifyInputTounsi({
-        name: "name",
-        styleError: [ ['border-color','yellow'],['border-style' , 'dashed'] ],
-        styleSuccess: [ ['border-color','blue'],['border-style' , 'dashed'] ],
-    });
+    //launch the plugin with overriding the placeholder of the input.
+    $("#cin").verifyInputTounsi(
+        {
+            name: "cin",
+            placeholder: "This is a custom placeholder",
+        }
+    );
+    $("#name").verifyInputTounsi("name");
     $("#lastname").verifyInputTounsi("lastname");
     $("#phone").verifyInputTounsi("phone");
     $("#email").verifyInputTounsi("email");
@@ -81,5 +80,6 @@
     $("#city").verifyInputTounsi("city");
     $("#address").verifyInputTounsi("address");
     $("#form").verifyInputTounsi("form");
+
 </script>
 </html>

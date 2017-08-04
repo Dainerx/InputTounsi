@@ -35,13 +35,13 @@ verifyFunctions['name'] = function (str) {
             return str['pattern'].test(str['value']);
         }
         else {
-            flagFunctions['name'] = /^[A-Za-z ]{4,50}$/.test(str['value']);
-            return /^[A-Za-z ]{4,50}$/.test(str['value']);
+            flagFunctions['name'] = /^[A-Za-z ]{3,50}$/.test(str['value']);
+            return /^[A-Za-z ]{3,50}$/.test(str['value']);
         }
     }
 
-    flagFunctions['name'] = /^[A-Za-z ]{4,50}$/.test(str['value']);
-    return /^[A-Za-z ]{4,50}$/.test(str);
+    flagFunctions['name'] = /^[A-Za-z ]{3,50}$/.test(str['value']);
+    return /^[A-Za-z ]{3,50}$/.test(str);
 };
 verifyFunctions['lastname'] = function (str) {
     if (str instanceof Object) {
@@ -50,12 +50,12 @@ verifyFunctions['lastname'] = function (str) {
             return str['pattern'].test(str['value']);
         }
         else {
-            flagFunctions['lastname'] = /^[A-Za-z ]{4,50}$/.test(str['value']);
-            return /^[A-Za-z ]{4,50}$/.test(str['value']);
+            flagFunctions['lastname'] = /^[A-Za-z ]{3,50}$/.test(str['value']);
+            return /^[A-Za-z ]{3,50}$/.test(str['value']);
         }
     }
-    flagFunctions['lastname'] = /^[A-Za-z ]{4,50}$/.test(str);
-    return /^[A-Za-z ]{4,50}$/.test(str);
+    flagFunctions['lastname'] = /^[A-Za-z ]{3,50}$/.test(str);
+    return /^[A-Za-z ]{3,50}$/.test(str);
 };
 verifyFunctions['phone'] = function (str) {
     if (str instanceof Object) {

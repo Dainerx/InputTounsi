@@ -139,9 +139,9 @@ Farida Ben Ghorbel and Rabiaa Ben Ghorbel, lovely aunts, caring mothers and insp
 
 Tested InputTounsi and have comments?
 
--> Please send your feeds back on one of my social medias accounts that can be on my [personal website](http://dainer.me/).
+* Please send your feeds back on one of my social medias accounts that can be on my [personal website](http://dainer.me/).
 
 Interested in making InputTounsi better for everyone? 
 
--> Come forward and contribute, everyone is welcome.
+* Come forward and contribute, everyone is welcome.
 

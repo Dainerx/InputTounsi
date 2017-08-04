@@ -36,7 +36,7 @@ You can view [a live demo](https://jsfiddle.net/dainer/96nxdLgt/6/), or try it  
 1. Include the script along with Jquery
   ```html
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="https://cdn.rawgit.com/Dainerx/InputTounsi/master/build/InputTounsi.min.js"></script>
+  <script src="https://cdn.rawgit.com/Dainerx/InputTounsi/5c25d240/build/InputTounsi.min.js"></script>
   ```
 
 2. Add the plugin script and initialise it on your input element
